@@ -1,0 +1,21 @@
+<div class="home-view-container">
+
+  <form class="search-form" ng-submit="searchMovie(searchTerm)" method="post">
+    <input type="text" name="name" value="" ng-model='searchTerm' placeholder="Search" />
+    <button type="button" name="button" ng-click="searchMovie(searchTerm)">GO!</button>
+  </form>
+
+  <section class="movie-container">
+    <img src="{{movieInfo.Poster}}" />
+    <aside class="info-wrapper">
+      <div> <h1>{{movieInfo.Title}} </h1> <h4>{{movieInfo.Year}}</h4><h4>{{movieInfo.Rated}}</h4></div>
+      <h3>Plot: {{movieInfo.Plot}}</h3>
+      <h3>Director: {{movieInfo.Director}}</h3>
+      <h3>Actors: {{movieInfo.Actors}}</h3>
+      <h3>IMDb Rating: {{movieInfo.imdbRating}}</h3>
+
+
+    </aside>
+  </section>
+
+</div>
